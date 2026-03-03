@@ -6,3 +6,4 @@ theme:
 nav:
   - Home: index.md
   - App Quickstart: quickstarts/apps.md
+  - Python Library: bospy/python.md
