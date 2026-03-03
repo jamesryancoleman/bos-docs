@@ -28,7 +28,10 @@ OpenBOS meets you where you are. Start simple and go as deep as you need. Comple
 
 ## Get started
 
-- [Getting Started](getting-started.md)
-- [Core Concepts](concepts.md)
-- [App Development](apps.md)
-- [Drivers & Protocols](drivers.md)
+<!-- - [Getting Started](getting-started.md) -->
+<!-- - [Core Concepts](concepts.md) -->
+<!-- - [App Development](apps.md) -->
+<!-- - [Drivers & Protocols](drivers.md) -->
+- Quickstart Guides
+    - [App Guide](quickstarts/apps.md)
+- [Feature Requests](feature-requests.md)
