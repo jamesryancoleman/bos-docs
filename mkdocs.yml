@@ -2,8 +2,21 @@ site_name: OpenBOS
 
 theme:
   name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
 
 nav:
   - Home: index.md
   - App Quickstart: quickstarts/apps.md
-  - Python Library: bospy/python.md
+  - Python Library: quickstarts/python.md

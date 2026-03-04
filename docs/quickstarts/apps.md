@@ -10,3 +10,6 @@ git clone https://github.com/jamesryancoleman/example-bospy-app NEW_NAME
 ```
 
 Open up your IDE of choice and follow the [README](https://github.com/jamesryancoleman/example-bospy-app) of the cloned repo.
+
+## Additional Examples
+[deadband-controller](https://github.com/jamesryancoleman/bos-app-deadband)
