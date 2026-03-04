@@ -19,4 +19,4 @@ theme:
 nav:
   - Home: index.md
   - App Quickstart: quickstarts/apps.md
-  - Python Library: quickstarts/python.md
+  - Python Library: client-libraries/python.md
