@@ -34,6 +34,7 @@ OpenBOS meets you where you are. Start simple and go as deep as you need. Comple
 <!-- - [Drivers & Protocols](drivers.md) -->
 - Quickstart Guides
     - [App Guide](quickstarts/apps.md)
+    - [Deadband Example](quickstarts/deadband-controller.md)
 - Client Libraries
     - [Python](client-libraries/python.md)
 - [Feature Requests](feature-requests.md)
