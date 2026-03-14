@@ -22,8 +22,8 @@ Protocol-agnostic driver interface. The main I/O gateway for physical devices.
 |-----|-------------|
 | `Get` | Read one or more point values by URI |
 | `Set` | Write one or more point values by URI |
-| `ClearCache` | Flush the xref and driver resolution caches |
-| `GetJobAccesses` | Return all point reads/writes logged for a given transaction ID |
+<!-- | `ClearCache` | Flush the xref and driver resolution caches |
+| `GetJobAccesses` | Return all point reads/writes logged for a given transaction ID | -->
 
 ---
 
@@ -58,8 +58,8 @@ Time-series historian.
 | `GetHistory` | Fetch rows for a list of point keys over a time range |
 | `GetSampleRate` | Read the current sample rate for a point |
 | `SetSampleRate` | Configure how often a point is sampled |
-| `RefreshRates` | Force the historian to reload its sampling config |
-| `RefreshNames` | Force the historian to reload its point name cache |
+<!-- | `RefreshRates` | Force the historian to reload its sampling config |
+| `RefreshNames` | Force the historian to reload its point name cache | -->
 
 ---
 
