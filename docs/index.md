@@ -28,14 +28,15 @@ OpenBOS meets you where you are. Start simple and go as deep as you need. Comple
 
 ## Get started
 
-<!-- - [Getting Started](getting-started.md) -->
-<!-- - [Core Concepts](concepts.md) -->
-<!-- - [App Development](apps.md) -->
-<!-- - [Drivers & Protocols](drivers.md) -->
-- Quickstart Guides
+- [Quickstart Guides](quickstarts/quickstarts.md)
     - [App Guide](quickstarts/apps.md)
     - [Deadband Example](quickstarts/deadband-controller.md)
     - [Drivers](quickstarts/driver.md)
+- Core Concepts
+    - [Architecture](overview/architecture.md)
+    - [Interfaces](overview/interfaces.md)
+- Web App
+    - [Overview](web-app/intro.md)
 - Client Libraries
     - [Python](client-libraries/python.md)
 - [Feature Requests](feature-requests.md)

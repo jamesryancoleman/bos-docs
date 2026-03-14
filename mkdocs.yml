@@ -18,5 +18,8 @@ theme:
 
 nav:
   - Home: index.md
-  - App Quickstart: quickstarts/apps.md
+  - Quickstarts: quickstarts/quickstarts.md
+  - Architecture: overview/architecture.md
+  - Interfaces: overview/interfaces.md
+  - Web App: web-app/intro.md
   - Python Library: client-libraries/python.md
