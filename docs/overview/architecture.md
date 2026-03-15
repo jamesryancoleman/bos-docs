@@ -2,7 +2,7 @@
 
 BOS is organized into four layers that communicate via gRPC (internal services) and hardware protocols (drivers to devices).
 
-![System Architecture](./system_architecture.jpg)
+![System Architecture](./system_architecture.jpg){width=67%}
 
 ---
 
