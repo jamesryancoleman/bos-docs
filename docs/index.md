@@ -29,6 +29,7 @@ OpenBOS meets you where you are. Start simple and go as deep as you need. Comple
 ## Get started
 
 - [Quickstart Guides](quickstarts/quickstarts.md)
+    - [Installation](quickstarts/install.md)
     - [App Guide](quickstarts/apps.md)
     - [Deadband Example](quickstarts/deadband-controller.md)
     - [Drivers](quickstarts/driver.md)
