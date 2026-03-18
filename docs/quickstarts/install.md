@@ -20,6 +20,13 @@ Start by cloning the repo:
 git clone --recursive git@github.com:jamesryancoleman/bos.git bos
 ```
 
+This project is designed to be run rootless. So you'll need to update your docker host environment variable to reflect that. 
+
+```bash
+cd ~
+echo 'export DOCKER_HOST=unix:///run/user/$(id -u)/docker.sock' >> ~/.bashrc && source ~/.bashrc
+```
+
 ## Launching the system
 When the repo is cloned launch the kernel services with:
 
