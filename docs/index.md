@@ -41,3 +41,4 @@ OpenBOS meets you where you are. Start simple and go as deep as you need. Comple
 - Client Libraries
     - [Python](client-libraries/python.md)
 - [Feature Requests](feature-requests.md)
+- [Gotchas](tips/gotchas.md)

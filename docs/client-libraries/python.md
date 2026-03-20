@@ -171,19 +171,20 @@ By default, `bospy` connects to services using hostnames and a port convention b
 
 | Service      | Default Address      | Env Var             |
 |--------------|----------------------|---------------------|
-| Sysmod       | `sysmod:2821`        | `SYSMOD_ADDR`       |
-| DevCtrl      | `devctrl:2822`       | `DEVCTRL_ADDR`      |
-| History      | `history:2823`       | `HISTORY_ADDR`      |
-| Orchestrator | `orchestrator:2824`  | `ORCHESTRATOR_ADDR` |
+| System       | `system:2821`        | `SYS_ADDR`          |
+| Sysmod       | `sysmod:2822`        | `SYSMOD_ADDR`       |
+| DevCtrl      | `devctrl:2823`       | `DEVCTRL_ADDR`      |
+| History      | `history:2824`       | `HISTORY_ADDR`      |
 | Forecast     | `forecast:2825`      | `FORECAST_ADDR`     |
 | Events       | `events:2826`        | `EVENTS_ADDR`       |
+| Orchestrator | `orchestrator:2827`  | `ORCHESTRATOR_ADDR` |
 
 Override any address before making calls:
 
 ```python
 import bospy
 
-bospy.config.set_devctrl_addr("localhost:2822")
+bospy.config.set_devctrl_addr("localhost:2823")
 
 # Or reload all from environment variables
 bospy.config.from_env()

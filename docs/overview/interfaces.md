@@ -4,12 +4,13 @@ All core BOS services are defined in `services/common/common.proto` and communic
 
 | Service        | Port | Purpose |
 |----------------|------|---------|
-| `Sysmod`       | 2821 | Semantic system model (devices, points, spaces) |
-| `DeviceControl`| 2822 | Protocol-agnostic driver I/O |
-| `History`      | 2823 | Time-series historian |
-| `Scheduler`    | 2824 | Container execution and scheduling |
+| `System`       | 2821 | System management (service health, logs) |
+| `Sysmod`       | 2822 | Semantic system model (devices, points, spaces) |
+| `DeviceControl`| 2823 | Protocol-agnostic driver I/O |
+| `History`      | 2824 | Time-series historian |
 | `Forecast`     | 2825 | Model-generated point forecasts |
 | `EventBus`     | 2826 | Kafka-backed pub/sub event bus |
+| `Scheduler`    | 2827 | Container execution and scheduling |
 | `HealthCheck`  | —    | Liveness probe, implemented by all services |
 
 ---

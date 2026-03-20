@@ -11,7 +11,6 @@ sudo usermod -aG docker $USER
 ```
 You MUST log out and log back in on Linux for this to take effect.
 
-
 ## Cloning the repo
 Presently, the repo is private. To access it, make sure your public ssh key has been added to your github profile so this operation works. For a refresher review [this](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) page.
 
@@ -22,19 +21,34 @@ git clone --recursive git@github.com:jamesryancoleman/bos.git bos
 
 This project is designed to be run rootless. So you'll need to update your docker host environment variable to reflect that. 
 
-```bash
+Depending on the specifics of your docker installation you may need to change where the orchestrator binds to the docker socks:
+
+```yml
+orchestrator:
+    build: 
+        context: ./services
+        dockerfile: ./ochestrator/docker/Dockerfile
+    container_name: ${ORCHESTRATOR_CONTAINER_NAME}
+    restart: always
+    env_vile:
+        - .env
+    environment:
+        - 
+```
+<!-- ```bash
 cd ~
 echo 'export DOCKER_HOST=unix:///run/user/$(id -u)/docker.sock' >> ~/.bashrc && source ~/.bashrc
-```
+``` -->
 
 ## Launching the system
 When the repo is cloned launch the kernel services with:
 
 ```bash
-docker compose up sysmod devctrl history orchestrator forecast events spog -d
+docker compose up sysmod devctrl history orchestrator forecast events cli jupyter spog -d
 ```
 
 You may get an error that part 80 is already in use on ubuntu. If so disable the apache service (pre-installed in Ubuntu) or re change the spog port in your docker-compose.yml file.
+
 
 ## BOPTEST Support
 If you want to use openBOS with [BOPTEST](https://github.com/ibpsa/project1-boptest) follow the github instructions to install and launch the BOPTEST. For example:
